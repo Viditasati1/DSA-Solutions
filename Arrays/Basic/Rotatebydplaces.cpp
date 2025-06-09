@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+// for left rotate
 // lets see the brute force approach
 // TC(O(2*n))   // SC(O(n))
 void rotatebydplaces(vector<int> &nums, int rotvalue)
@@ -50,3 +50,24 @@ void rotatebydplaces(vector<int> &nums, int rotvalue)
     }
 }
    
+
+// for right rotate brute force and optimize is  same as left rotate
+ void rotate(vector<int>& nums, int k) {
+      vector<int>temp;
+      int n=nums.size();
+      k=k%n;
+    for(int i=0; i<n-k; i++)temp.push_back(nums[i]);
+
+   for(int i = 0; i < k; i++) {
+            nums[i] = nums[n - k + i];
+        }
+
+   for(int i = 0; i < temp.size(); i++) {
+            nums[k + i] = temp[i];
+        }
+
+    }    
+    
+    
+
+    
