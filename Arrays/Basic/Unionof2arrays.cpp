@@ -1,7 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
+// brute force approach : use map to store from both the arrays and then return the key values
+// also we can use set
 
-
+// this is the optimized approach
 vector<int> findUnion(vector<int> &a, vector<int> &b) {
         vector<int> ans;
         int i = 0, j = 0;
