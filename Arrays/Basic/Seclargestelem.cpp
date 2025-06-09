@@ -1,7 +1,7 @@
 // brute force approach: sort the array in descending
 // order and second index element is your second largest elem TC(nlogn)
 
-// optimal approach
+// optimal approach TC(n)
 #include <bits/stdc++.h>
 using namespace std;
 int solve(vector<int> &nums)
